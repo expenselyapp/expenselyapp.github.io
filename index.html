@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ExpenseLedger - Receipt Scanner & Expense Tracker</title>
-  <meta name="description" content="ExpenseLedger helps you scan receipts, organize expenses, export reports, and keep your data on your device.">
+  <title>Landlord Ledger - Rental Property Receipt & Expense Tracker</title>
+  <meta name="description" content="Landlord Ledger helps small landlords track rental property receipts, fixed expenses, mileage trips, units, rent details, and property-first reports while keeping data on device.">
   <style>
     :root {
       --green: #14532D;
@@ -33,7 +33,7 @@
       align-items: center;
       justify-content: center;
       gap: 72px;
-      height: 56px;
+      min-height: 56px;
     }
 
     .nav-brand {
@@ -44,6 +44,7 @@
       font-weight: 700;
       font-size: 17px;
       text-decoration: none;
+      white-space: nowrap;
     }
 
     .nav-logo {
@@ -56,6 +57,8 @@
     .nav-links {
       display: flex;
       gap: 28px;
+      flex-wrap: wrap;
+      justify-content: center;
     }
 
     .topnav a {
@@ -91,7 +94,7 @@
 
     .subtitle {
       font-size: 20px;
-      max-width: 680px;
+      max-width: 760px;
       margin: 0 auto 28px;
       color: #DCFCE7;
     }
@@ -121,7 +124,7 @@
     .section-subtitle {
       text-align: center;
       color: var(--muted);
-      max-width: 680px;
+      max-width: 760px;
       margin: 0 auto 40px;
     }
 
@@ -133,15 +136,19 @@
 
     .card {
       background: var(--card);
-      border-radius: 24px;
+      border-radius: 8px;
       padding: 28px;
       box-shadow: 0 10px 30px rgba(0,0,0,0.06);
       border: 1px solid #E5E7EB;
     }
 
-    .icon {
-      font-size: 32px;
-      margin-bottom: 12px;
+    .eyebrow {
+      color: var(--green2);
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 0;
+      text-transform: uppercase;
+      margin-bottom: 8px;
     }
 
     .card h3 {
@@ -158,7 +165,7 @@
       margin-top: 56px;
       background: #ECFDF5;
       border: 1px solid #BBF7D0;
-      border-radius: 28px;
+      border-radius: 8px;
       padding: 36px;
       text-align: center;
     }
@@ -185,10 +192,13 @@
       h1 { font-size: 38px; }
       .grid { grid-template-columns: 1fr; }
       header { padding: 64px 20px; }
-      .topnav { padding: 0 16px; }
+      .topnav {
+        padding: 12px 16px;
+        gap: 12px;
+        flex-direction: column;
+      }
       .nav-links { gap: 16px; }
-    }  
-
+    }
   </style>
 </head>
 <body>
@@ -196,66 +206,66 @@
 <nav class="topnav">
   <a href="index.html" class="nav-brand">
     <img src="icon.png" class="nav-logo" alt="">
-    <span>ExpenseLedger</span>
+    <span>Landlord Ledger</span>
   </a>
   <div class="nav-links">
     <a href="index.html">Home</a>
     <a href="support.html">Support</a>
-    <a href="privay-policy.html">Privacy Policy</a>
+    <a href="privacy-policy.html">Privacy Policy</a>
   </div>
 </nav>
 
 <header>
-  <img src="icon.png" class="logo" alt="ExpenseLedger">
-  <h1>ExpenseLedger</h1>
+  <img src="icon.png" class="logo" alt="Landlord Ledger">
+  <h1>Landlord Ledger</h1>
   <p class="subtitle">
-    Scan receipts, track expenses, and export reports for your records.
+    Track rental property receipts, fixed expenses, mileage trips, units, and property-first reports in one private iPhone app.
   </p>
   <a class="cta" href="#">Coming Soon on the App Store</a>
 </header>
 
 <main>
   <section>
-    <h2 class="section-title">Fast and simple expense tracking</h2>
+    <h2 class="section-title">Built for small landlords</h2>
     <p class="section-subtitle">
-      ExpenseLedger helps rental property owners and small business users capture, organize, and manage receipts in one private place.
+      Landlord Ledger is focused on rental property bookkeeping: receipts, repeating property costs, business mileage, rental units, and exports organized by property.
     </p>
 
     <div class="grid">
       <div class="card">
-        <div class="icon">📷</div>
-        <h3>Scan Receipts</h3>
-        <p>Capture receipts quickly with smart document scanning and edge detection.</p>
+        <div class="eyebrow">Properties</div>
+        <h3>Track Each Rental</h3>
+        <p>Create rental properties, store addresses and notes, then attach receipts, fixed expenses, mileage trips, and units to the right property.</p>
       </div>
 
       <div class="card">
-        <div class="icon">🔎</div>
-        <h3>Smart OCR</h3>
-        <p>Extract key details such as merchant, amount, and date automatically.</p>
+        <div class="eyebrow">Receipts</div>
+        <h3>Scan and Import</h3>
+        <p>Capture paper receipts, import photos, or add PDFs. On-device OCR helps read merchant, amount, date, and searchable receipt text.</p>
       </div>
 
       <div class="card">
-        <div class="icon">🏷️</div>
-        <h3>Organize by Category</h3>
-        <p>Create categories and keep your receipts organized for easy review.</p>
+        <div class="eyebrow">Fixed Costs</div>
+        <h3>Monthly and Yearly Expenses</h3>
+        <p>Add mortgage interest, insurance, municipal tax, school tax, condo fees, management fees, and other recurring property costs.</p>
       </div>
 
       <div class="card">
-        <div class="icon">🔍</div>
-        <h3>Search & Filter</h3>
-        <p>Find receipts by merchant, notes, category, date, or extracted text.</p>
+        <div class="eyebrow">Mileage</div>
+        <h3>Business Trip Tracking</h3>
+        <p>Record trip date, purpose, origin, destination, distance, rate, linked property, and related receipts for landlord business travel.</p>
       </div>
 
       <div class="card">
-        <div class="icon">📊</div>
-        <h3>Dashboard</h3>
-        <p>View simple expense summaries and category insights.</p>
+        <div class="eyebrow">Units</div>
+        <h3>Rental Unit Details</h3>
+        <p>Store unit number, monthly rent, start date, optional end date, and notes so property records include rent context.</p>
       </div>
 
       <div class="card">
-        <div class="icon">📤</div>
-        <h3>Export Reports</h3>
-        <p>Export CSV reports and backup your data when you choose.</p>
+        <div class="eyebrow">Reports</div>
+        <h3>Property-First CSV Export</h3>
+        <p>Review dashboard totals by date range and export CSV reports ordered by rental property, then by date, with category and property totals.</p>
       </div>
     </div>
   </section>
@@ -263,19 +273,19 @@
   <section class="privacy">
     <h2>Private by design</h2>
     <p>
-      No account required. Your receipts and expense data stay on your device unless you choose to export or share them.
+      Landlord Ledger stores receipts, properties, trips, units, fixed expenses, and reports locally on your device. No cloud account, analytics SDK, advertising SDK, or tracking SDK is required.
     </p>
   </section>
 </main>
 
 <footer>
-  <p>© 2026 ExpenseLedger. All rights reserved.</p>
+  <p>© 2026 Landlord Ledger. All rights reserved.</p>
   <p>
     <a href="index.html">Home</a>
     &nbsp;·&nbsp;
     <a href="support.html">Support</a>
     &nbsp;·&nbsp;
-    <a href="privay-policy.html">Privacy Policy</a>
+    <a href="privacy-policy.html">Privacy Policy</a>
   </p>
 </footer>
 

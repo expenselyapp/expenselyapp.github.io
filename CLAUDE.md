@@ -17,7 +17,7 @@ To deploy: push to `main` branch — GitHub Pages deploys automatically.
 Two pages, each a self-contained HTML file with embedded `<style>` blocks (no external CSS files, no JavaScript):
 
 - [index.html](index.html) — Marketing landing page with features grid, privacy callout, and App Store CTA
-- [privay-policy.html](privay-policy.html) — Privacy policy (note: filename has a typo — "privay" not "privacy", but `index.html` links to this exact filename so do not rename without updating the link)
+- [privacy-policy.html](privacy-policy.html) — Privacy policy
 
 CSS uses variables defined in `:root` for the green color theme (`--green`, `--accent`, `--text`, `--muted`, `--bg`, `--card`). Responsive breakpoint at `820px`.
 

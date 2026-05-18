@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ExpenseLedger - Support</title>
-  <meta name="description" content="Get help with ExpenseLedger. Browse common questions or contact our support team.">
+  <title>Landlord Ledger - Support</title>
+  <meta name="description" content="Get help with Landlord Ledger, the private rental property receipt, fixed expense, mileage, unit, and report tracker for small landlords.">
   <style>
     :root {
       --green: #14532D;
@@ -33,7 +33,7 @@
       align-items: center;
       justify-content: center;
       gap: 72px;
-      height: 56px;
+      min-height: 56px;
     }
 
     .nav-brand {
@@ -44,6 +44,7 @@
       font-weight: 700;
       font-size: 17px;
       text-decoration: none;
+      white-space: nowrap;
     }
 
     .nav-logo {
@@ -56,6 +57,8 @@
     .nav-links {
       display: flex;
       gap: 28px;
+      flex-wrap: wrap;
+      justify-content: center;
     }
 
     .topnav a {
@@ -121,7 +124,7 @@
 
     .card {
       background: var(--card);
-      border-radius: 20px;
+      border-radius: 8px;
       padding: 24px 28px;
       box-shadow: 0 10px 30px rgba(0,0,0,0.06);
       border: 1px solid #E5E7EB;
@@ -140,7 +143,7 @@
     .contact {
       background: #ECFDF5;
       border: 1px solid #BBF7D0;
-      border-radius: 28px;
+      border-radius: 8px;
       padding: 36px;
       text-align: center;
     }
@@ -177,7 +180,11 @@
     @media (max-width: 820px) {
       h1 { font-size: 38px; }
       header { padding: 64px 20px; }
-      .topnav { padding: 0 16px; }
+      .topnav {
+        padding: 12px 16px;
+        gap: 12px;
+        flex-direction: column;
+      }
       .nav-links { gap: 16px; }
     }
   </style>
@@ -187,72 +194,82 @@
 <nav class="topnav">
   <a href="index.html" class="nav-brand">
     <img src="icon.png" class="nav-logo" alt="">
-    <span>ExpenseLedger</span>
+    <span>Landlord Ledger</span>
   </a>
   <div class="nav-links">
     <a href="index.html">Home</a>
     <a href="support.html">Support</a>
-    <a href="privay-policy.html">Privacy Policy</a>
+    <a href="privacy-policy.html">Privacy Policy</a>
   </div>
 </nav>
 
 <header>
-  <img src="icon.png" class="logo" alt="ExpenseLedger">
+  <img src="icon.png" class="logo" alt="Landlord Ledger">
   <h1>Support</h1>
-  <p class="subtitle">We're here to help you get the most out of ExpenseLedger.</p>
+  <p class="subtitle">Help for tracking rental property receipts, fixed expenses, mileage, units, and reports.</p>
 </header>
 
 <main>
   <h2 class="section-title">Common questions</h2>
-  <p class="section-subtitle">Quick answers to frequently asked questions.</p>
+  <p class="section-subtitle">Quick answers for Landlord Ledger users.</p>
 
   <div class="faq">
     <div class="card">
       <h3>Is my data stored in the cloud?</h3>
-      <p>No. All receipts and expense data are stored locally on your device. Nothing is uploaded to external servers unless you choose to export or share a file yourself.</p>
+      <p>No. Receipts, properties, rental units, fixed expenses, mileage trips, notes, categories, and reports are stored locally on your device unless you choose to export, back up, or share a file.</p>
     </div>
 
     <div class="card">
-      <h3>Do I need an account to use ExpenseLedger?</h3>
-      <p>When you first open the app, you'll create a local username and password to protect your data. This account exists only on your device — it is never synced to the cloud or any external server.</p>
+      <h3>How do I add a rental property?</h3>
+      <p>Open the Properties tab, add a property, then use the property detail screen to add rental units, fixed expenses, linked receipts, and mileage trips.</p>
     </div>
 
     <div class="card">
-      <h3>How do I export my expenses reports?</h3>
-      <p>Tap the Export button in the Dashboard or Reports section to generate a CSV file. You can save it to your device or share it with any app that accepts files.</p>
+      <h3>Where should I enter insurance, school tax, or municipal tax?</h3>
+      <p>Enter recurring property costs as Fixed Expenses inside the related property. Receipt categories are for variable receipt expenses such as repairs, supplies, utilities, cleaning, and advertising.</p>
     </div>
 
     <div class="card">
-      <h3>What file types can I import?</h3>
-      <p>ExpenseLedger supports photos from your camera or photo library, as well as PDF documents. OCR text extraction works on both image and PDF receipts.</p>
+      <h3>Can fixed expenses have start and end dates?</h3>
+      <p>Yes. Fixed expenses include a start date and an optional end date. Dashboard totals use the selected date range and only count active months that overlap that range.</p>
+    </div>
+
+    <div class="card">
+      <h3>How do I track mileage?</h3>
+      <p>Use the Trips tab to add business mileage with date, purpose, origin, destination, distance, rate, and property. You can also link receipts to trips.</p>
+    </div>
+
+    <div class="card">
+      <h3>How are exported reports organized?</h3>
+      <p>CSV reports are ordered by rental property first, then by date. Reports include receipt date, captured date, merchant, amount, category, rental property, business trip, and notes.</p>
+    </div>
+
+    <div class="card">
+      <h3>What date ranges are available in reports?</h3>
+      <p>The dashboard and report export support This Month, Last Month, This Year, and Custom date ranges.</p>
     </div>
 
     <div class="card">
       <h3>How do I back up my data?</h3>
-      <p>Use the Export or Backup option in the app settings to create a backup file. Store it in iCloud Drive, Files, or any location of your choice.</p>
-    </div>
-
-    <div class="card">
-      <h3>Can I organize receipts by property or project?</h3>
-      <p>Yes. Create custom categories to group receipts by rental property, client, project, or any other system that works for you.</p>
+      <p>Use the backup option in Settings to create a backup file. Store it in Files, iCloud Drive, or another location you choose.</p>
     </div>
   </div>
 
   <div class="contact">
     <h2>Still need help?</h2>
-    <p>Send us an email and we'll get back to you as soon as possible.</p>
+    <p>Send an email with the issue, your iOS version, and the screen where the problem happened.</p>
     <a href="mailto:expensely.app@google.com">expensely.app@google.com</a>
   </div>
 </main>
 
 <footer>
-  <p>© 2026 ExpenseLedger. All rights reserved.</p>
+  <p>© 2026 Landlord Ledger. All rights reserved.</p>
   <p>
     <a href="index.html">Home</a>
     &nbsp;·&nbsp;
     <a href="support.html">Support</a>
     &nbsp;·&nbsp;
-    <a href="privay-policy.html">Privacy Policy</a>
+    <a href="privacy-policy.html">Privacy Policy</a>
   </p>
 </footer>
 

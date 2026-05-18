@@ -3,7 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ExpenseLedger - Privacy Policy</title>
+  <title>Landlord Ledger - Privacy Policy</title>
+  <meta name="description" content="Privacy policy for Landlord Ledger, a private on-device rental property receipt, expense, mileage, unit, and report tracker.">
   <style>
     :root {
       --green: #14532D;
@@ -32,7 +33,7 @@
       align-items: center;
       justify-content: center;
       gap: 72px;
-      height: 56px;
+      min-height: 56px;
     }
 
     .nav-brand {
@@ -43,6 +44,7 @@
       font-weight: 700;
       font-size: 17px;
       text-decoration: none;
+      white-space: nowrap;
     }
 
     .nav-logo {
@@ -55,6 +57,8 @@
     .nav-links {
       display: flex;
       gap: 28px;
+      flex-wrap: wrap;
+      justify-content: center;
     }
 
     .topnav a {
@@ -103,7 +107,7 @@
 
     .policy-card {
       background: var(--card);
-      border-radius: 24px;
+      border-radius: 8px;
       padding: 40px;
       box-shadow: 0 10px 30px rgba(0,0,0,0.06);
       border: 1px solid #E5E7EB;
@@ -158,7 +162,11 @@
     @media (max-width: 820px) {
       h1 { font-size: 38px; }
       header { padding: 64px 20px; }
-      .topnav { padding: 0 16px; }
+      .topnav {
+        padding: 12px 16px;
+        gap: 12px;
+        flex-direction: column;
+      }
       .nav-links { gap: 16px; }
       .policy-card { padding: 28px 20px; }
     }
@@ -169,47 +177,51 @@
 <nav class="topnav">
   <a href="index.html" class="nav-brand">
     <img src="icon.png" class="nav-logo" alt="">
-    <span>ExpenseLedger</span>
+    <span>Landlord Ledger</span>
   </a>
   <div class="nav-links">
     <a href="index.html">Home</a>
     <a href="support.html">Support</a>
-    <a href="privay-policy.html">Privacy Policy</a>
+    <a href="privacy-policy.html">Privacy Policy</a>
   </div>
 </nav>
 
 <header>
-  <img src="icon.png" class="logo" alt="ExpenseLedger">
+  <img src="icon.png" class="logo" alt="Landlord Ledger">
   <h1>Privacy Policy</h1>
-  <p class="subtitle">Your data stays on your device.</p>
+  <p class="subtitle">Your rental property records stay on your device.</p>
 </header>
 
 <main>
   <div class="policy-card">
-    <p class="effective"><strong>Effective date:</strong> May 3, 2026</p>
+    <p class="effective"><strong>Effective date:</strong> May 18, 2026</p>
 
     <h2>Overview</h2>
-    <p>ExpenseLedger is a receipt management and expense tracking app. The app is designed to operate locally on your device. We do not operate servers that collect or store your personal data.</p>
+    <p>Landlord Ledger is a rental property receipt, expense, mileage, unit, and report tracking app for small landlords. The app is designed to operate locally on your device. We do not operate servers that collect or store your personal data.</p>
 
     <h2>Information We Do Not Collect</h2>
-    <p>ExpenseLedger does not collect, store, or transmit your personal data to external servers.</p>
+    <p>Landlord Ledger does not collect, store, or transmit your personal data to external servers.</p>
     <ul>
       <li>We do not collect your name, email address, or personal identifiers.</li>
-      <li>We do not upload your receipts, images, PDFs, or documents.</li>
+      <li>We do not upload your receipts, images, PDFs, property records, unit records, mileage trips, reports, or backup files.</li>
       <li>We do not track your location.</li>
       <li>We do not use analytics, advertising, or tracking SDKs.</li>
       <li>We do not provide cloud accounts or cloud sync.</li>
     </ul>
 
     <h2>Camera, Photo Library, and File Access</h2>
-    <p>ExpenseLedger may request access to your camera, photo library, or files so you can scan receipts, import images, or import PDF documents. These files are processed locally on your device.</p>
+    <p>Landlord Ledger may request access to your camera, photo library, or files so you can scan receipts, import images, or import PDF documents. These files are processed locally on your device.</p>
 
     <h2>Local Storage</h2>
     <p>The app stores data locally on your device, including:</p>
     <ul>
       <li>Receipt images and PDF files</li>
       <li>Extracted OCR text</li>
-      <li>Expense details such as merchant, amount, date, notes, and categories</li>
+      <li>Receipt details such as merchant, amount, date, category, notes, linked property, and linked trip</li>
+      <li>Rental property details such as property name, address, and notes</li>
+      <li>Rental unit details such as unit number, monthly rent, start date, optional end date, and notes</li>
+      <li>Fixed expense details such as amount, frequency, start date, optional end date, and notes</li>
+      <li>Mileage trip details such as purpose, date, origin, destination, distance, rate, property, linked receipts, and notes</li>
       <li>App preferences such as language and security settings</li>
     </ul>
     <p>This data remains on your device unless you choose to export, back up, or share it.</p>
@@ -218,17 +230,17 @@
     <p>Text recognition is performed on device. Receipt images and extracted text are not sent to our servers.</p>
 
     <h2>Export, Backup, and Sharing</h2>
-    <p>ExpenseLedger allows you to export reports, CSV files, receipt files, and backup files. These files are created only when you choose to export or share them.</p>
+    <p>Landlord Ledger allows you to export CSV reports, receipt files, and backup files. These files are created only when you choose to export or share them.</p>
     <p>Once you share exported files with another app or service, that app or service handles the data according to its own privacy practices.</p>
 
     <h2>Security</h2>
-    <p>ExpenseLedger may use device-provided security features such as Face ID, Touch ID, or device passcode protection. Password-related information is stored locally and is not transmitted to external servers.</p>
+    <p>Landlord Ledger may use device-provided security features such as Face ID, Touch ID, or device passcode protection. Password-related information is stored locally and is not transmitted to external servers.</p>
 
     <h2>Third-Party Services</h2>
-    <p>ExpenseLedger does not use third-party analytics, tracking, or advertising services.</p>
+    <p>Landlord Ledger does not use third-party analytics, tracking, or advertising services.</p>
 
     <h2>Children's Privacy</h2>
-    <p>ExpenseLedger is not directed to children under the age of 13. We do not knowingly collect personal information from children.</p>
+    <p>Landlord Ledger is not directed to children under the age of 13. We do not knowingly collect personal information from children.</p>
 
     <h2>Changes to This Policy</h2>
     <p>We may update this Privacy Policy from time to time. Updates will be posted on this page with a revised effective date.</p>
@@ -239,13 +251,13 @@
 </main>
 
 <footer>
-  <p>© 2026 ExpenseLedger. All rights reserved.</p>
+  <p>© 2026 Landlord Ledger. All rights reserved.</p>
   <p>
     <a href="index.html">Home</a>
     &nbsp;·&nbsp;
     <a href="support.html">Support</a>
     &nbsp;·&nbsp;
-    <a href="privay-policy.html">Privacy Policy</a>
+    <a href="privacy-policy.html">Privacy Policy</a>
   </p>
 </footer>
 
